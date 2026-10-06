@@ -1,0 +1,18 @@
+{
+  "name": "UpSnap",
+  "available": true,
+  "exposable": true,
+  "id": "upsnap",
+  "tipi_version": 1,
+  "version": "5",
+  "port": 8090,
+  "categories": ["utilities", "network"],
+  "description": "A simple wake on lan web app written with SvelteKit, Go and PocketBase. Scan your network, add devices by MAC and power them on with a click, with scheduling and status ping.",
+  "short_desc": "Wake on LAN web app",
+  "author": "seriousm4x",
+  "source": "https://github.com/seriousm4x/UpSnap",
+  "website": "https://github.com/seriousm4x/UpSnap",
+  "supported_architectures": ["arm64", "amd64", "arm"],
+  "created_at": 1759766400000,
+  "updated_at": 1759766400000
+}

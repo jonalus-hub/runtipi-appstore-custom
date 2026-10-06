@@ -1,0 +1,19 @@
+services:
+  upsnap:
+    image: ghcr.io/seriousm4x/upsnap:5
+    container_name: upsnap
+    network_mode: host
+    restart: unless-stopped
+    cap_add:
+      - NET_RAW
+    cap_drop:
+      - ALL
+    environment:
+      - TZ=${TZ}
+    volumes:
+      - ${APP_DATA_DIR}/data:/app/pb_data
+    x-runtipi:
+      internal_port: 8090
+      is_main: true
+x-runtipi:
+  schema_version: 2
